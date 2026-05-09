@@ -2276,7 +2276,7 @@
 }
 
 .homepage-mentors-header {
-  max-width: 820px;
+  max-width: 1000px;
   margin: 0 auto 50px;
   text-align: center;
 }
@@ -2361,9 +2361,9 @@
 }
 
 .homepage-mentor-content span {
+  padding: 8px 13px;
   display: inline-flex;
   margin-bottom: 12px;
-  color: #2f6bff;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.6px;
@@ -2405,7 +2405,8 @@
   height: 112px;
   display: grid;
   place-items: center;
-  margin: 0 auto 26px;
+  padding: 10px 16px;
+  margin: 0 auto 6px;
   color: #05070d;
   font-size: 24px;
   line-height: 1.1;

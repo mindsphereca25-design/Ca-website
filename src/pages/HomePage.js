@@ -50,58 +50,62 @@ function HomePage() {
           </div>
         </section>
 
-
-        <section className="homepage-academy-section">
-          <div className="homepage-academy-container">
-            <div className="homepage-academy-image-wrap">
-              <img src="/images/home-academy1.jpeg" alt="Mind Sphere CA CMA Academy classroom" />
-              <div className="homepage-academy-badge">
-                <span>3 Days</span>
-                <p>Free Demo Classes</p>
-              </div>
+        <section className="homepage-mentors-section">
+          <div className="homepage-mentors-container">
+            <div className="homepage-mentors-header">
+              <span>Expert Mentorship</span>
+              <h2>Learn under the guidance of experienced Chartered Accountants.</h2>
+              <p>
+                Mind Sphere CA CMA Academy is founded by Chartered Accountants Ranga Swamy and Nanda Divya, bringing professional experience, practical clarity, and student-focused teaching into every class.
+              </p>
             </div>
 
-            <div className="homepage-academy-content">
-              <span className="homepage-academy-kicker">Why Mind Sphere?</span>
-
-              <h2>Learn CA concepts with clarity, discipline, and expert guidance.</h2>
-
-              <p>
-                Mind Sphere CA CMA Academy helps students build a strong academic base through Chartered Accountant-led coaching, personal attention, regular practice, and exam-focused preparation.
-              </p>
-
-              <div className="homepage-academy-points">
-                <div className="homepage-academy-point">
-                  <span>01</span>
-                  <div>
-                    <h3>Guided by Chartered Accountants</h3>
-                    <p>Learn from experienced professionals who understand the CA journey deeply.</p>
-                  </div>
+            <div className="homepage-mentors-layout">
+              <div className="homepage-mentor-profile">
+                <div className="homepage-mentor-image">
+                  <img src="/images/home-mentor-1.jpeg" alt="CA Ranga Swamy" />
                 </div>
 
-                <div className="homepage-academy-point">
-                  <span>02</span>
-                  <div>
-                    <h3>CA Foundation with MEC</h3>
-                    <p>Start early after 10th with a strong commerce and CA foundation plan.</p>
-                  </div>
-                </div>
-
-                <div className="homepage-academy-point">
-                  <span>03</span>
-                  <div>
-                    <h3>Hostel Facility Available</h3>
-                    <p>Convenient support for students who need a comfortable stay while studying.</p>
-                  </div>
+                <div className="homepage-mentor-content">
+                  <span>Founder & Faculty</span>
+                  <h3>CA Ranga Swamy</h3>
+                  <p>
+                    Guides students with clear explanations, structured preparation, and practical understanding of CA subjects.
+                  </p>
                 </div>
               </div>
 
-              <button type="button" className="homepage-academy-btn" onClick={goToContact}>
-                Join Free Demo
-              </button>
+              <div className="homepage-mentor-center-card">
+                <span>10+ Years</span>
+                <h3>Professional Experience</h3>
+                <p>
+                  Students learn from mentors who understand both professional accounting practice and exam-focused preparation.
+                </p>
+
+                <button type="button" className="homepage-mentors-btn" onClick={goToContact}>
+                  Talk to Our Team
+                </button>
+              </div>
+
+              <div className="homepage-mentor-profile">
+                <div className="homepage-mentor-image">
+                  <img src="/images/home-mentor-2.jpeg" alt="CA Nanda Divya" />
+                </div>
+
+                <div className="homepage-mentor-content">
+                  <span>Founder & Faculty</span>
+                  <h3>CA Nanda Divya</h3>
+                  <p>
+                    Supports students with disciplined learning, personal attention, revision planning, and confidence-building guidance.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
+
+
+
 
         <section className="gaming-grid-section">
           <div className="gaming-grid-layout">
@@ -361,60 +365,58 @@ function HomePage() {
         </section>
 
 
-
-        <section className="homepage-mentors-section">
-          <div className="homepage-mentors-container">
-            <div className="homepage-mentors-header">
-              <span>Expert Mentorship</span>
-              <h2>Learn under the guidance of experienced Chartered Accountants.</h2>
-              <p>
-                Mind Sphere CA CMA Academy is founded by Chartered Accountants Ranga Swamy and Nanda Divya, bringing professional experience, practical clarity, and student-focused teaching into every class.
-              </p>
+        <section className="homepage-academy-section">
+          <div className="homepage-academy-container">
+            <div className="homepage-academy-image-wrap">
+              <img src="/images/home-academy1.jpeg" alt="Mind Sphere CA CMA Academy classroom" />
+              <div className="homepage-academy-badge">
+                <span>3 Days</span>
+                <p>Free Demo Classes</p>
+              </div>
             </div>
 
-            <div className="homepage-mentors-layout">
-              <div className="homepage-mentor-profile">
-                <div className="homepage-mentor-image">
-                  <img src="/images/home-mentor-1.jpeg" alt="CA Ranga Swamy" />
+            <div className="homepage-academy-content">
+              <span className="homepage-academy-kicker">Why Mind Sphere?</span>
+
+              <h2>Learn CA concepts with clarity, discipline, and expert guidance.</h2>
+
+              <p>
+                Mind Sphere CA CMA Academy helps students build a strong academic base through Chartered Accountant-led coaching, personal attention, regular practice, and exam-focused preparation.
+              </p>
+
+              <div className="homepage-academy-points">
+                <div className="homepage-academy-point">
+                  <span>01</span>
+                  <div>
+                    <h3>Guided by Chartered Accountants</h3>
+                    <p>Learn from experienced professionals who understand the CA journey deeply.</p>
+                  </div>
                 </div>
 
-                <div className="homepage-mentor-content">
-                  <span>Founder & Faculty</span>
-                  <h3>CA Ranga Swamy</h3>
-                  <p>
-                    Guides students with clear explanations, structured preparation, and practical understanding of CA subjects.
-                  </p>
-                </div>
-              </div>
-
-              <div className="homepage-mentor-center-card">
-                <span>10+ Years</span>
-                <h3>Professional Experience</h3>
-                <p>
-                  Students learn from mentors who understand both professional accounting practice and exam-focused preparation.
-                </p>
-
-                <button type="button" className="homepage-mentors-btn" onClick={goToContact}>
-                  Talk to Our Team
-                </button>
-              </div>
-
-              <div className="homepage-mentor-profile">
-                <div className="homepage-mentor-image">
-                  <img src="/images/home-mentor-2.jpeg" alt="CA Nanda Divya" />
+                <div className="homepage-academy-point">
+                  <span>02</span>
+                  <div>
+                    <h3>CA Foundation with MEC</h3>
+                    <p>Start early after 10th with a strong commerce and CA foundation plan.</p>
+                  </div>
                 </div>
 
-                <div className="homepage-mentor-content">
-                  <span>Founder & Faculty</span>
-                  <h3>CA Nanda Divya</h3>
-                  <p>
-                    Supports students with disciplined learning, personal attention, revision planning, and confidence-building guidance.
-                  </p>
+                <div className="homepage-academy-point">
+                  <span>03</span>
+                  <div>
+                    <h3>Hostel Facility Available</h3>
+                    <p>Convenient support for students who need a comfortable stay while studying.</p>
+                  </div>
                 </div>
               </div>
+
+              <button type="button" className="homepage-academy-btn" onClick={goToContact}>
+                Join Free Demo
+              </button>
             </div>
           </div>
         </section>
+
 
         <section className="homepage-results-section">
           <div className="homepage-results-container">
