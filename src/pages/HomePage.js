@@ -54,7 +54,7 @@ function HomePage() {
         <section className="homepage-academy-section">
           <div className="homepage-academy-container">
             <div className="homepage-academy-image-wrap">
-              <img src="/images/home-academy.jpg" alt="Mind Sphere CA CMA Academy classroom" />
+              <img src="/images/home-academy1.jpeg" alt="Mind Sphere CA CMA Academy classroom" />
               <div className="homepage-academy-badge">
                 <span>3 Days</span>
                 <p>Free Demo Classes</p>
@@ -142,56 +142,56 @@ function HomePage() {
 
 
         <section className="homepage-learning-section">
-  <div className="homepage-learning-container">
-    <div className="homepage-learning-header">
-      <span>Learning Programs</span>
-      <h2>One academy, multiple paths for serious CA preparation</h2>
-      <p>
-        Mind Sphere CA CMA Academy supports students from early school stages to CA Intermediate with Chartered Accountant-led guidance, concept-based teaching, regular practice, revision support, and personal attention.
-      </p>
-    </div>
+          <div className="homepage-learning-container">
+            <div className="homepage-learning-header">
+              <span>Learning Programs</span>
+              <h2>One academy, multiple paths for serious CA preparation</h2>
+              <p>
+                Mind Sphere CA CMA Academy supports students from early school stages to CA Intermediate with Chartered Accountant-led guidance, concept-based teaching, regular practice, revision support, and personal attention.
+              </p>
+            </div>
 
-    <div className="homepage-learning-grid">
-      <div className="homepage-learning-card large">
-        <div className="homepage-learning-image">
-          <img src="/images/home-learning-1.jpg" alt="CA Foundation with MEC" />
-        </div>
+            <div className="homepage-learning-grid">
+              <div className="homepage-learning-card large">
+                <div className="homepage-learning-image">
+                  <img src="/images/home-learning-1.jpg" alt="CA Foundation with MEC" />
+                </div>
 
-        <div className="homepage-learning-content">
-          <span>After 10th</span>
-          <h3>Intermediate MEC + CA Foundation</h3>
-          <p>
-            A strong early route for students who want to begin commerce and CA preparation with the right academic direction. This path helps students build accounting basics, business understanding, mathematical confidence, and disciplined study habits from the beginning.
-          </p>
-        </div>
-      </div>
+                <div className="homepage-learning-content">
+                  <span>After 10th</span>
+                  <h3>Intermediate MEC + CA Foundation</h3>
+                  <p>
+                    A strong early route for students who want to begin commerce and CA preparation with the right academic direction. This path helps students build accounting basics, business understanding, mathematical confidence, and disciplined study habits from the beginning.
+                  </p>
+                </div>
+              </div>
 
-      <div className="homepage-learning-card">
-        <div className="homepage-learning-icon">12</div>
+              <div className="homepage-learning-card">
+                <div className="homepage-learning-icon">12</div>
 
-        <div className="homepage-learning-content">
-          <span>After 12th</span>
-          <h3>CA Foundation + CA Intermediate</h3>
-          <p>
-            A focused path for students ready to begin professional CA preparation after completing 12th. Students receive guidance for CA Foundation and a clear academic direction to move toward CA Intermediate with confidence.
-          </p>
-        </div>
-      </div>
+                <div className="homepage-learning-content">
+                  <span>After 12th</span>
+                  <h3>CA Foundation + CA Intermediate</h3>
+                  <p>
+                    A focused path for students ready to begin professional CA preparation after completing 12th. Students receive guidance for CA Foundation and a clear academic direction to move toward CA Intermediate with confidence.
+                  </p>
+                </div>
+              </div>
 
-      <div className="homepage-learning-card accent">
-        <div className="homepage-learning-icon">S</div>
+              <div className="homepage-learning-card accent">
+                <div className="homepage-learning-icon">S</div>
 
-        <div className="homepage-learning-content">
-          <span>School Students</span>
-          <h3>Sunday Special CA Coaching</h3>
-          <p>
-            Special Sunday classes for 9th and 10th students to build discipline, confidence, calculation skills, basic commerce thinking, and early interest in the CA profession before entering higher classes.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+                <div className="homepage-learning-content">
+                  <span>School Students</span>
+                  <h3>Sunday Special CA Coaching</h3>
+                  <p>
+                    Special Sunday classes for 9th and 10th students to build discipline, confidence, calculation skills, basic commerce thinking, and early interest in the CA profession before entering higher classes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section className="gaming-showcase-section">
           <div className="gaming-showcase-header">
@@ -280,7 +280,7 @@ function HomePage() {
 
             <div className="homepage-hostel-gallery">
               <div className="homepage-hostel-image large">
-                <img src="/images/home-hostel-1.jpg" alt="Mind Sphere hostel facility" />
+                <img src="/images/home-hostel-3.jpeg" alt="Mind Sphere hostel facility" />
               </div>
 
               <div className="homepage-hostel-small-grid">
