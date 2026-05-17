@@ -7,6 +7,27 @@ import "./HomePage.css";
 function HomePage() {
   const navigate = useNavigate();
 
+  const coursePaths = [
+    {
+      title: "10th Completed?",
+      subtitle: "Intermediate MEC + CA Foundation",
+      text: "A planned route for students who want to begin commerce and CA preparation early with strong basics.",
+      image: "/images/course-path-1.jpg"
+    },
+    {
+      title: "12th Completed?",
+      subtitle: "CA Foundation + CA Intermediate",
+      text: "A focused path for students ready to enter the CA stream and build confidence for higher-level preparation.",
+      image: "/images/course-path-2.jpg"
+    },
+    {
+      title: "9th & 10th Students",
+      subtitle: "Sunday Special CA Coaching",
+      text: "Early foundation classes that introduce students to disciplined study, commerce thinking, and problem-solving.",
+      image: "/images/course-path-3.jpg"
+    }
+  ];
+
   const goToContact = () => {
     navigate("/contact");
   };
@@ -50,6 +71,33 @@ function HomePage() {
           </div>
         </section>
 
+        <section className="courses-paths-section-home">
+          <div className="courses-section-heading-home dark-home center-home">
+            <span>Choose Your Path</span>
+            <h2>Start from where you are today</h2>
+            <p>
+              Whether you completed 10th, completed 12th, or are still in school, we have a learning path that helps you begin with clarity.
+            </p>
+          </div>
+
+          <div className="courses-paths-grid-home">
+            {coursePaths.map((path) => (
+              <article className="courses-path-card-home" key={path.title}>
+                <div className="courses-path-image-home">
+                  <img src={path.image} alt={path.subtitle} />
+                </div>
+
+                <div className="courses-path-content-home">
+                  <span>{path.title}</span>
+                  <h3>{path.subtitle}</h3>
+                  <p>{path.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+
         <section className="homepage-mentors-section">
           <div className="homepage-mentors-container">
             <div className="homepage-mentors-header">
@@ -76,7 +124,7 @@ function HomePage() {
               </div>
 
               <div className="homepage-mentor-center-card">
-                <span>10+ Years</span>
+                <span>5+ Years</span>
                 <h3>Professional Experience</h3>
                 <p>
                   Students learn from mentors who understand both professional accounting practice and exam-focused preparation.
@@ -293,9 +341,29 @@ function HomePage() {
                 </div>
 
                 <div className="homepage-hostel-info-card">
-                  <span>Available</span>
+                  <span className="homepage-hostel-status">Available</span>
+
                   <h3>Hostel Facility</h3>
-                  <p>Contact academy team for details.</p>
+
+                  <p className="homepage-hostel-contact-title">For hostel enquiries, call us directly</p>
+
+                  <div className="homepage-hostel-contact-list">
+                    <a href="tel:+919848318538" className="homepage-hostel-phone-link">
+                      <span className="homepage-hostel-phone-icon">☎</span>
+                      <span>
+                        <small>Hostel Enquiry</small>
+                        +91 98483 18538
+                      </span>
+                    </a>
+
+                    <a href="tel:+9191828233051" className="homepage-hostel-phone-link">
+                      <span className="homepage-hostel-phone-icon">☎</span>
+                      <span>
+                        <small>Student Support</small>
+                        +91 91828 233051
+                      </span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -438,7 +506,7 @@ function HomePage() {
                 </div>
 
                 <div className="homepage-results-stat">
-                  <strong>10+</strong>
+                  <strong>5+</strong>
                   <span>Years of Experience</span>
                 </div>
 

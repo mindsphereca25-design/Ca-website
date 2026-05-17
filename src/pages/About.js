@@ -119,7 +119,7 @@ function About() {
           </div>
 
           <div className="about-highlight-card">
-            <span>10+ Years</span>
+            <span>5+ Years</span>
             <p>Professional Experience</p>
           </div>
 
@@ -195,7 +195,7 @@ function About() {
                 </div>
 
                 <div>
-                  <strong>10+</strong>
+                  <strong>5+</strong>
                   <p>Years Experience</p>
                 </div>
 
