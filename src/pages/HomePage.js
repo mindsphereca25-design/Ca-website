@@ -9,24 +9,53 @@ function HomePage() {
 
   const coursePaths = [
     {
-      title: "10th Completed?",
+      id: "school-students",
+      title: (
+        <>
+          <span className="courses-path-grade-home">
+            9<sup>th</sup>
+          </span>
+          <span className="courses-path-connector-home">&</span>
+          <span className="courses-path-grade-home">
+            10<sup>th</sup>
+          </span>
+          <span>Students</span>
+        </>
+      ),
+      subtitle: "Sunday Special CA Coaching",
+      text: "Early foundation classes that introduce students to disciplined study, commerce thinking, and problem-solving.",
+      image: "/images/course-path-3.jpg"
+    },
+    {
+      id: "tenth-completed",
+      title: (
+        <>
+          <span className="courses-path-grade-home">
+            10<sup>th</sup>
+          </span>
+          <span>Completed?</span>
+        </>
+      ),
       subtitle: "Intermediate MEC + CA Foundation",
       text: "A planned route for students who want to begin commerce and CA preparation early with strong basics.",
       image: "/images/course-path-1.jpg"
     },
     {
-      title: "12th Completed?",
+      id: "twelfth-completed",
+      title: (
+        <>
+          <span className="courses-path-grade-home">
+            12<sup>th</sup>
+          </span>
+          <span>Completed?</span>
+        </>
+      ),
       subtitle: "CA Foundation + CA Intermediate",
       text: "A focused path for students ready to enter the CA stream and build confidence for higher-level preparation.",
       image: "/images/course-path-2.jpg"
-    },
-    {
-      title: "9th & 10th Students",
-      subtitle: "Sunday Special CA Coaching",
-      text: "Early foundation classes that introduce students to disciplined study, commerce thinking, and problem-solving.",
-      image: "/images/course-path-3.jpg"
     }
   ];
+
 
   const goToContact = () => {
     navigate("/contact");
@@ -38,7 +67,17 @@ function HomePage() {
 
       <main className="gaming-homepage-main">
 
-        <section className="gaming-intro-section">
+        <section className="main-banner-section">
+          <div className="main-banner-wrapper">
+            <img
+              src="/images/main-banner.png"
+              alt="Mind Sphere CA CMA Academy main banner"
+              className="main-banner-image"
+            />
+          </div>
+        </section>
+
+        {/*<section className="gaming-intro-section">
           <div className="gaming-intro-grid-bg">
             <span className="gaming-intro-line gaming-intro-line-one" />
             <span className="gaming-intro-line gaming-intro-line-two" />
@@ -49,7 +88,7 @@ function HomePage() {
           <div className="gaming-orbit gaming-orbit-two" />
 
           <div className="gaming-intro-content">
-            <span className="gaming-intro-kicker">Welcome to Mind Sphere</span>
+            <span className="gaming-intro-kicker">Welcome to<span className="gaming-intro-kicker-main">Mind Sphere</span> </span>
 
             <h1>Begin Your CA Journey with Clear Guidance and Strong Foundations</h1>
 
@@ -69,7 +108,7 @@ function HomePage() {
               </button>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="courses-paths-section-home">
           <div className="courses-section-heading-home dark-home center-home">
@@ -82,13 +121,13 @@ function HomePage() {
 
           <div className="courses-paths-grid-home">
             {coursePaths.map((path) => (
-              <article className="courses-path-card-home" key={path.title}>
+              <article className="courses-path-card-home" key={path.id}>
                 <div className="courses-path-image-home">
                   <img src={path.image} alt={path.subtitle} />
                 </div>
 
                 <div className="courses-path-content-home">
-                  <span>{path.title}</span>
+                  <div className="courses-path-title-home">{path.title}</div>
                   <h3>{path.subtitle}</h3>
                   <p>{path.text}</p>
                 </div>
@@ -160,7 +199,7 @@ function HomePage() {
             <div className="gaming-grid-content-card">
               <div className="gaming-grid-content-inner">
                 <span className="gaming-grid-kicker">Mind Sphere CA CMA Academy</span>
-                <h2>Guided by Chartered Accountants for a Strong CA Future</h2>
+                <h2>Guided by Chartered Accountants</h2>
                 <p>
                   Learn with expert CA guidance, clear concepts, disciplined preparation, and focused support for CA Foundation, MEC, and CA Intermediate.
                 </p>
@@ -171,7 +210,6 @@ function HomePage() {
             </div>
 
             <div className="gaming-grid-split-card">
-              <div className="gaming-grid-plain" />
               <div className="gaming-grid-image-card">
                 <img src="/images/grid6.jpg" alt="CA academy classroom learning" />
               </div>
@@ -181,7 +219,6 @@ function HomePage() {
               <div className="gaming-grid-image-card">
                 <img src="/images/grid7.jpg" alt="Students preparing for CA exams" />
               </div>
-              <div className="gaming-grid-plain" />
             </div>
 
             <div className="gaming-grid-full-image-card">
@@ -245,7 +282,7 @@ function HomePage() {
           </div>
         </section>
 
-        <section className="gaming-showcase-section">
+        {/*<section className="gaming-showcase-section">
           <div className="gaming-showcase-header">
             <span>Our Learning Paths</span>
             <h2>Courses designed for students at every important stage</h2>
@@ -286,7 +323,7 @@ function HomePage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="homepage-hostel-section">
           <div className="homepage-hostel-container">
@@ -352,7 +389,7 @@ function HomePage() {
                       <span className="homepage-hostel-phone-icon">☎</span>
                       <span>
                         <small>Hostel Enquiry</small>
-                        +91 98483 18538
+                        +91 70923 37173
                       </span>
                     </a>
 
@@ -360,7 +397,7 @@ function HomePage() {
                       <span className="homepage-hostel-phone-icon">☎</span>
                       <span>
                         <small>Student Support</small>
-                        +91 91828 233051
+                        +91 91828 23051
                       </span>
                     </a>
                   </div>
@@ -371,7 +408,7 @@ function HomePage() {
         </section>
 
 
-        <section className="homepage-demo-section">
+        {/*<section className="homepage-demo-section">
           <div className="homepage-demo-container">
             <div className="homepage-demo-content">
               <div className="homepage-demo-left">
@@ -430,7 +467,7 @@ function HomePage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
 
         <section className="homepage-academy-section">
