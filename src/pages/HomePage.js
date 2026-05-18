@@ -222,7 +222,7 @@ function HomePage() {
 
 
 
-        <section className="gaming-grid-section">
+        {/*<section className="gaming-grid-section">
           <div className="gaming-grid-layout">
             <div className="gaming-grid-content-card">
               <div className="gaming-grid-content-inner">
@@ -253,7 +253,7 @@ function HomePage() {
               <img src="/images/new3.png" alt="Mind Sphere CA CMA Academy students" />
             </div>
           </div>
-        </section>
+        </section>  */}
 
 
 
