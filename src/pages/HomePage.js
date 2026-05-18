@@ -10,6 +10,8 @@ function HomePage() {
   const coursePaths = [
     {
       id: "school-students",
+      tone: "school-path-home",
+      badge: "Early Start",
       title: (
         <>
           <span className="courses-path-grade-home">
@@ -19,39 +21,46 @@ function HomePage() {
           <span className="courses-path-grade-home">
             10<sup>th</sup>
           </span>
-          <span>Students</span>
+          <span className="courses-path-title-text-home">Students</span>
         </>
       ),
       subtitle: "Sunday Special CA Coaching",
       text: "Early foundation classes that introduce students to disciplined study, commerce thinking, and problem-solving.",
+      points: ["School-friendly schedule", "Commerce basics", "Early CA mindset"],
       image: "/images/course-path-3.jpg"
     },
     {
       id: "tenth-completed",
+      tone: "tenth-path-home",
+      badge: "After 10th",
       title: (
         <>
           <span className="courses-path-grade-home">
             10<sup>th</sup>
           </span>
-          <span>Completed?</span>
+          <span className="courses-path-title-text-home">Completed?</span>
         </>
       ),
       subtitle: "Intermediate MEC + CA Foundation",
       text: "A planned route for students who want to begin commerce and CA preparation early with strong basics.",
-      image: "/images/course-path-1.jpg"
+      points: ["MEC with CA focus", "Strong fundamentals", "Guided preparation"],
+      image: "/images/course-path-4.png"
     },
     {
       id: "twelfth-completed",
+      tone: "twelfth-path-home",
+      badge: "After 12th",
       title: (
         <>
           <span className="courses-path-grade-home">
             12<sup>th</sup>
           </span>
-          <span>Completed?</span>
+          <span className="courses-path-title-text-home">Completed?</span>
         </>
       ),
       subtitle: "CA Foundation + CA Intermediate",
       text: "A focused path for students ready to enter the CA stream and build confidence for higher-level preparation.",
+      points: ["Exam-focused path", "Concept clarity", "Intermediate-ready"],
       image: "/images/course-path-2.jpg"
     }
   ];
@@ -120,16 +129,35 @@ function HomePage() {
           </div>
 
           <div className="courses-paths-grid-home">
-            {coursePaths.map((path) => (
-              <article className="courses-path-card-home" key={path.id}>
-                <div className="courses-path-image-home">
+            {coursePaths.map((path, index) => (
+              <article className={`courses-path-card-home ${path.tone}`} key={path.id}>
+                <div className="courses-path-card-bg-home"></div>
+
+                <div className="courses-path-image-wrap-home">
                   <img src={path.image} alt={path.subtitle} />
+                  <div className="courses-path-image-overlay-home"></div>
+
+                  
+
+                  
                 </div>
 
                 <div className="courses-path-content-home">
-                  <div className="courses-path-title-home">{path.title}</div>
+                  <div className="courses-path-title-home">
+                    {path.title}
+                  </div>
+
                   <h3>{path.subtitle}</h3>
                   <p>{path.text}</p>
+
+                  <ul className="courses-path-points-home">
+                    {path.points.map((point) => (
+                      <li key={point}>
+                        <span></span>
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </article>
             ))}
@@ -211,18 +239,18 @@ function HomePage() {
 
             <div className="gaming-grid-split-card">
               <div className="gaming-grid-image-card">
-                <img src="/images/grid6.jpg" alt="CA academy classroom learning" />
+                <img src="/images/new1.png" alt="CA academy classroom learning" />
               </div>
             </div>
 
             <div className="gaming-grid-split-card">
               <div className="gaming-grid-image-card">
-                <img src="/images/grid7.jpg" alt="Students preparing for CA exams" />
+                <img src="/images/new2.png" alt="Students preparing for CA exams" />
               </div>
             </div>
 
             <div className="gaming-grid-full-image-card">
-              <img src="/images/grid8.jpg" alt="Mind Sphere CA CMA Academy students" />
+              <img src="/images/new3.png" alt="Mind Sphere CA CMA Academy students" />
             </div>
           </div>
         </section>
@@ -243,7 +271,7 @@ function HomePage() {
             <div className="homepage-learning-grid">
               <div className="homepage-learning-card large">
                 <div className="homepage-learning-image">
-                  <img src="/images/home-learning-1.jpg" alt="CA Foundation with MEC" />
+                  <img src="/images/home-learning-5.png" alt="CA Foundation with MEC" />
                 </div>
 
                 <div className="homepage-learning-content">
