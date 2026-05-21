@@ -27,7 +27,7 @@ function HomePage() {
       subtitle: "Sunday Special CA Coaching",
       text: "Early foundation classes that introduce students to disciplined study, commerce thinking, and problem-solving.",
       points: ["School-friendly schedule", "Commerce basics", "Early CA mindset"],
-      image: "/images/course-path-3.jpg"
+      image: "/images/course-path-6.png"
     },
     {
       id: "tenth-completed",
@@ -120,50 +120,43 @@ function HomePage() {
         </section> */}
 
         <section className="courses-paths-section-home">
-          <div className="courses-section-heading-home dark-home center-home">
-            <span>Choose Your Path</span>
-            <h2>Start from where you are today</h2>
-            <p>
-              Whether you completed 10th, completed 12th, or are still in school, we have a learning path that helps you begin with clarity.
-            </p>
+  <div className="courses-section-heading-home dark-home center-home">
+    <span>Choose Your Path</span>
+    <h2>Start from where you are today</h2>
+    <p>
+      Whether you completed 10th, completed 12th, or are still in school, we have a learning path that helps you begin with clarity.
+    </p>
+  </div>
+
+  <div className="courses-paths-grid-home">
+    {coursePaths.map((path) => (
+      <article className="courses-path-card-home" key={path.id}>
+        <div className="courses-path-image-wrap-home">
+          <img src={path.image} alt={path.subtitle} />
+          <div className="courses-path-image-overlay-home"></div>
+        </div>
+
+        <div className="courses-path-content-home">
+          <div className="courses-path-title-home">
+            {path.title}
           </div>
 
-          <div className="courses-paths-grid-home">
-            {coursePaths.map((path, index) => (
-              <article className={`courses-path-card-home ${path.tone}`} key={path.id}>
-                <div className="courses-path-card-bg-home"></div>
+          <h3>{path.subtitle}</h3>
+          <p>{path.text}</p>
 
-                <div className="courses-path-image-wrap-home">
-                  <img src={path.image} alt={path.subtitle} />
-                  <div className="courses-path-image-overlay-home"></div>
-
-                  
-
-                  
-                </div>
-
-                <div className="courses-path-content-home">
-                  <div className="courses-path-title-home">
-                    {path.title}
-                  </div>
-
-                  <h3>{path.subtitle}</h3>
-                  <p>{path.text}</p>
-
-                  <ul className="courses-path-points-home">
-                    {path.points.map((point) => (
-                      <li key={point}>
-                        <span></span>
-                        {point}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </article>
+          <ul className="courses-path-points-home">
+            {path.points.map((point) => (
+              <li key={point}>
+                <span></span>
+                {point}
+              </li>
             ))}
-          </div>
-        </section>
-
+          </ul>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>
 
         <section className="homepage-mentors-section">
           <div className="homepage-mentors-container">
@@ -191,7 +184,7 @@ function HomePage() {
               </div>
 
               <div className="homepage-mentor-center-card">
-                <span>5+ Years</span>
+
                 <h3>Professional Experience</h3>
                 <p>
                   Students learn from mentors who understand both professional accounting practice and exam-focused preparation.
@@ -552,6 +545,9 @@ function HomePage() {
 
 
         <section className="homepage-results-section">
+          <div className="homepage-results-bg-glow homepage-results-bg-glow-one"></div>
+          <div className="homepage-results-bg-glow homepage-results-bg-glow-two"></div>
+
           <div className="homepage-results-container">
             <div className="homepage-results-top">
               <span className="homepage-results-kicker">Focused Preparation</span>
@@ -565,19 +561,37 @@ function HomePage() {
 
             <div className="homepage-results-layout">
               <div className="homepage-results-stats-panel">
-                <div className="homepage-results-stat">
-                  <strong>2025</strong>
-                  <span>Established</span>
+                <div className="homepage-results-panel-header">
+                  <span>Foundation Support</span>
+                  <h3>Built for steady progress</h3>
+                  <p>
+                    A focused environment where students learn discipline, strengthen basics, and prepare with confidence.
+                  </p>
                 </div>
 
-                <div className="homepage-results-stat">
-                  <strong>5+</strong>
-                  <span>Years of Experience</span>
+                <div className="homepage-results-stats-grid">
+                  <div className="homepage-results-stat homepage-results-stat-highlight">
+                    <strong>3 Days</strong>
+                    <span>Free Demo Classes</span>
+                  </div>
+
+                  <div className="homepage-results-stat">
+                    <strong>CA</strong>
+                    <span>Guided Learning</span>
+                  </div>
+
+                  <div className="homepage-results-stat">
+                    <strong>100%</strong>
+                    <span>Concept Focused</span>
+                  </div>
                 </div>
 
-                <div className="homepage-results-stat">
-                  <strong>3 Days</strong>
-                  <span>Free Demo Classes</span>
+                <div className="homepage-results-mini-card">
+                  <div className="homepage-results-mini-icon">✓</div>
+                  <div>
+                    <h4>Exam-ready approach</h4>
+                    <p>Regular revision, test practice, and doubt clearing help students stay prepared.</p>
+                  </div>
                 </div>
               </div>
 
@@ -585,7 +599,8 @@ function HomePage() {
                 <div className="homepage-results-card">
                   <div className="homepage-results-number">01</div>
 
-                  <div>
+                  <div className="homepage-results-card-content">
+                    <span>Learn deeply</span>
                     <h3>Concept Clarity</h3>
                     <p>
                       Students learn the logic behind every subject so they can solve questions with confidence.
@@ -596,7 +611,8 @@ function HomePage() {
                 <div className="homepage-results-card homepage-results-card-active">
                   <div className="homepage-results-number">02</div>
 
-                  <div>
+                  <div className="homepage-results-card-content">
+                    <span>Practice smartly</span>
                     <h3>Regular Practice</h3>
                     <p>
                       Classroom practice, revision, and test preparation help students stay consistent.
@@ -607,7 +623,8 @@ function HomePage() {
                 <div className="homepage-results-card">
                   <div className="homepage-results-number">03</div>
 
-                  <div>
+                  <div className="homepage-results-card-content">
+                    <span>Improve step by step</span>
                     <h3>Personal Attention</h3>
                     <p>
                       Faculty guidance helps students correct mistakes and improve their preparation step by step.
