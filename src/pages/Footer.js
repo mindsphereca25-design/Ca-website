@@ -145,7 +145,7 @@ function Footer() {
 
             <div className="footer-feature-card">
               <span>For Students</span>
-              <p>9th, 10th - Students, 10th Completed, 12th Completed</p>
+              <p>9th, 10th School_Students, 10th Completed, 12th Completed</p>
             </div>
           </div>
         </div>

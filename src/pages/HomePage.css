@@ -1107,236 +1107,516 @@
 
 
 
-.homepage-learning-section {
+.homepage-anniversary-section {
+  position: relative;
   width: 100%;
-  padding: 10px 24px;
-  background: #ffffff;
+  padding: 96px 24px;
   color: #05070d;
+  background:
+    radial-gradient(circle at 8% 12%, rgba(247, 183, 49, 0.18), transparent 30%),
+    radial-gradient(circle at 92% 8%, rgba(47, 107, 255, 0.14), transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, #f7f9ff 52%, #fffaf0 100%);
   overflow: hidden;
 }
 
-.homepage-learning-container {
+.homepage-anniversary-glow {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(8px);
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+.homepage-anniversary-glow.glow-one {
+  width: 220px;
+  height: 220px;
+  left: -90px;
+  top: 140px;
+  background: rgba(247, 183, 49, 0.22);
+}
+
+.homepage-anniversary-glow.glow-two {
+  width: 280px;
+  height: 280px;
+  right: -120px;
+  bottom: 110px;
+  background: rgba(47, 107, 255, 0.16);
+}
+
+.homepage-anniversary-container {
+  position: relative;
+  z-index: 2;
   width: min(1240px, 100%);
   margin: 0 auto;
 }
 
-.homepage-learning-header {
-  max-width: 760px;
-  margin: 0 auto 48px;
+.homepage-anniversary-header {
+  max-width: 800px;
+  margin: 0 auto 54px;
   text-align: center;
 }
 
-.homepage-learning-header span {
+.homepage-anniversary-header span {
   display: inline-flex;
-  width: fit-content;
   align-items: center;
-  padding: 9px 15px;
+  justify-content: center;
+  width: fit-content;
+  padding: 10px 18px;
   color: #2f6bff;
   font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.7px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
-  border: 1px solid rgba(47, 107, 255, 0.22);
+  border: 1px solid rgba(47, 107, 255, 0.2);
   border-radius: 999px;
   background: rgba(47, 107, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(47, 107, 255, 0.08);
 }
 
-.homepage-learning-header h2 {
+.homepage-anniversary-header h2 {
   margin: 20px 0 16px;
   color: #05070d;
-  font-size: clamp(30px, 4vw, 54px);
-  line-height: 1.12;
-  font-weight: 700;
-  letter-spacing: -1.2px;
+  font-size: clamp(32px, 4.6vw, 62px);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -1.6px;
 }
 
-.homepage-learning-header p {
-  margin: 0;
+.homepage-anniversary-header p {
+  margin: 0 auto;
+  max-width: 720px;
   color: #596276;
   font-size: 17px;
   line-height: 1.8;
   font-weight: 400;
 }
 
-.homepage-learning-grid {
+.homepage-anniversary-layout {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 16px;
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: 20px;
+  align-items: stretch;
 }
 
-.homepage-learning-card {
+.homepage-anniversary-hero,
+.homepage-anniversary-card,
+.homepage-anniversary-image,
+.homepage-anniversary-stats {
+  border: 1px solid rgba(5, 7, 13, 0.1);
+  box-shadow: 0 24px 70px rgba(5, 7, 13, 0.09);
+}
+
+.homepage-anniversary-hero {
   position: relative;
-  min-height: 310px;
+  min-height: 680px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
   overflow: hidden;
-  border-radius: 30px;
-  border: 1px solid rgba(5, 7, 13, 0.1);
-  background:
-    radial-gradient(circle at top right, rgba(47, 107, 255, 0.12), transparent 36%),
-    #f7f9ff;
-  box-shadow: 0 22px 60px rgba(5, 7, 13, 0.08);
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 34px;
+  background: #ffffff;
 }
 
-.homepage-learning-card:hover {
-  transform: translateY(-8px);
-  border-color: rgba(47, 107, 255, 0.34);
-  box-shadow: 0 30px 76px rgba(5, 7, 13, 0.12);
+.homepage-anniversary-badge {
+  position: absolute;
+  z-index: 3;
+  top: 24px;
+  left: 24px;
+  width: 128px;
+  height: 128px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 16px;
+  color: #05070d;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 18px 42px rgba(5, 7, 13, 0.18);
+  backdrop-filter: blur(14px);
 }
 
-.homepage-learning-card.large {
-  min-height: 642px;
-  grid-row: span 2;
-  padding: 0;
+.homepage-anniversary-badge strong {
+  display: block;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #2f6bff;
 }
 
-.homepage-learning-card.accent {
-  background:
-    radial-gradient(circle at top right, rgba(247, 183, 49, 0.18), transparent 36%),
-    #fffaf0;
+.homepage-anniversary-badge small {
+  display: block;
+  margin-top: 6px;
+  color: #596276;
+  font-size: 11px;
+  line-height: 1.35;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.homepage-learning-image {
-  width: 100%;
-  height: 500px;
+.homepage-anniversary-image {
+  position: relative;
   overflow: hidden;
+  background: #eef2ff;
 }
 
-.homepage-learning-image img {
+.homepage-anniversary-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 52%, rgba(5, 7, 13, 0.5) 100%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.homepage-anniversary-image img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
-  transition: transform 0.75s ease;
+  transition: transform 0.8s ease;
 }
 
-.homepage-learning-card:hover .homepage-learning-image img {
+.homepage-anniversary-hero:hover img,
+.homepage-anniversary-image:hover img {
   transform: scale(1.05);
 }
 
-.homepage-learning-card.large .homepage-learning-content {
-  padding: 30px;
+.homepage-anniversary-image.main-image {
+  width: 100%;
+  height: 455px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-.homepage-learning-icon {
-  width: 64px;
-  height: 64px;
-  display: grid;
-  place-items: center;
-  color: #05070d;
-  font-size: 22px;
-  font-weight: 700;
-  border-radius: 20px;
-  background: #f7b731;
-  box-shadow: 0 16px 34px rgba(247, 183, 49, 0.22);
+.homepage-anniversary-hero-content {
+  flex: 1;
+  padding: 34px;
+  background:
+    radial-gradient(circle at top right, rgba(247, 183, 49, 0.13), transparent 36%),
+    #ffffff;
 }
 
-.homepage-learning-content span {
+.homepage-anniversary-hero-content span,
+.homepage-anniversary-card span {
   display: inline-flex;
   margin-bottom: 12px;
-  color: #2f6bff;
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.6px;
+  color: #b47700;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.7px;
   text-transform: uppercase;
 }
 
-.homepage-learning-card.accent .homepage-learning-content span {
-  color: #b47700;
-}
-
-.homepage-learning-content h3 {
-  margin: 0 0 12px;
+.homepage-anniversary-hero-content h3,
+.homepage-anniversary-card h3 {
+  margin: 0 0 14px;
   color: #05070d;
-  font-size: 28px;
-  line-height: 1.22;
-  font-weight: 700;
-  letter-spacing: -0.4px;
+  font-size: 31px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.7px;
 }
 
-.homepage-learning-content p {
+.homepage-anniversary-hero-content p,
+.homepage-anniversary-card p {
   margin: 0;
   color: #596276;
-  font-size: 15px;
-  line-height: 1.75;
+  font-size: 15.5px;
+  line-height: 1.78;
   font-weight: 400;
 }
 
-@media (max-width: 992px) {
-  .homepage-learning-section {
-    padding: 90px 24px;
-  }
+.homepage-anniversary-side {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 20px;
+}
 
-  .homepage-learning-grid {
+.homepage-anniversary-card {
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at top right, rgba(47, 107, 255, 0.13), transparent 36%),
+    #ffffff;
+}
+
+.homepage-anniversary-card-icon {
+  width: 66px;
+  height: 66px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 28px;
+  color: #05070d;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 22px;
+  background: #f7b731;
+  box-shadow: 0 18px 38px rgba(247, 183, 49, 0.28);
+}
+
+.homepage-anniversary-card.celebration-card h3 {
+  max-width: 390px;
+}
+
+.homepage-anniversary-photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.homepage-anniversary-image.small-image {
+  height: 245px;
+  border-radius: 30px;
+}
+
+.homepage-anniversary-card.dark-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 260px;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.12);
+  background:
+    radial-gradient(circle at top right, rgba(247, 183, 49, 0.28), transparent 38%),
+    linear-gradient(135deg, #05070d 0%, #10192e 55%, #1a2d62 100%);
+  box-shadow: 0 28px 76px rgba(5, 7, 13, 0.2);
+}
+
+.homepage-anniversary-card.dark-card span {
+  color: #f7b731;
+}
+
+.homepage-anniversary-card.dark-card h3 {
+  color: #ffffff;
+}
+
+.homepage-anniversary-card.dark-card p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.homepage-anniversary-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 22px;
+  overflow: hidden;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(18px);
+}
+
+.homepage-anniversary-stats div {
+  padding: 26px 28px;
+  border-right: 1px solid rgba(5, 7, 13, 0.08);
+}
+
+.homepage-anniversary-stats div:last-child {
+  border-right: 0;
+}
+
+.homepage-anniversary-stats strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #05070d;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: -0.4px;
+}
+
+.homepage-anniversary-stats span {
+  display: block;
+  color: #596276;
+  font-size: 14.5px;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+  .homepage-anniversary-layout {
     grid-template-columns: 1fr;
   }
 
-  .homepage-learning-card.large {
+  .homepage-anniversary-hero {
     min-height: auto;
-    grid-row: auto;
   }
 
-  .homepage-learning-image {
-    height: 360px;
+  .homepage-anniversary-side {
+    grid-template-columns: 1fr;
+  }
+
+  .homepage-anniversary-image.main-image {
+    height: 430px;
+  }
+
+  .homepage-anniversary-card.dark-card {
+    min-height: auto;
   }
 }
 
 @media (max-width: 768px) {
-  .homepage-learning-section {
+  .homepage-anniversary-section {
     padding: 78px 18px;
   }
 
-  .homepage-learning-header {
+  .homepage-anniversary-header {
+    margin-bottom: 36px;
     text-align: left;
-    margin-bottom: 34px;
   }
 
-  .homepage-learning-header h2 {
-    letter-spacing: -0.8px;
+  .homepage-anniversary-header span {
+    padding: 9px 15px;
+    font-size: 12px;
   }
 
-  .homepage-learning-header p {
+  .homepage-anniversary-header h2 {
+    margin-top: 18px;
+    font-size: clamp(30px, 10vw, 44px);
+    letter-spacing: -1px;
+  }
+
+  .homepage-anniversary-header p {
     font-size: 16px;
     line-height: 1.75;
   }
 
-  .homepage-learning-card,
-  .homepage-learning-card.large .homepage-learning-content {
+  .homepage-anniversary-layout,
+  .homepage-anniversary-side,
+  .homepage-anniversary-photo-grid {
+    gap: 16px;
+  }
+
+  .homepage-anniversary-hero,
+  .homepage-anniversary-card,
+  .homepage-anniversary-image.small-image,
+  .homepage-anniversary-stats {
+    border-radius: 26px;
+  }
+
+  .homepage-anniversary-image.main-image {
+    height: 360px;
+  }
+
+  .homepage-anniversary-badge {
+    width: 108px;
+    height: 108px;
+    top: 18px;
+    left: 18px;
+  }
+
+  .homepage-anniversary-badge strong {
+    font-size: 26px;
+  }
+
+  .homepage-anniversary-badge small {
+    font-size: 10px;
+  }
+
+  .homepage-anniversary-hero-content,
+  .homepage-anniversary-card {
     padding: 24px;
   }
 
-  .homepage-learning-card.large {
-    padding: 0;
+  .homepage-anniversary-hero-content h3,
+  .homepage-anniversary-card h3 {
+    font-size: 25px;
+    letter-spacing: -0.4px;
   }
 
-  .homepage-learning-content h3 {
-    font-size: 24px;
+  .homepage-anniversary-photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .homepage-anniversary-image.small-image {
+    height: 300px;
+  }
+
+  .homepage-anniversary-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .homepage-anniversary-stats div {
+    padding: 22px 24px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(5, 7, 13, 0.08);
+  }
+
+  .homepage-anniversary-stats div:last-child {
+    border-bottom: 0;
   }
 }
 
 @media (max-width: 480px) {
-  .homepage-learning-section {
+  .homepage-anniversary-section {
     padding: 64px 14px;
   }
 
-  .homepage-learning-card {
-    min-height: auto;
-    border-radius: 24px;
+  .homepage-anniversary-header {
+    margin-bottom: 30px;
   }
 
-  .homepage-learning-image {
-    height: 280px;
+  .homepage-anniversary-header h2 {
+    font-size: 31px;
+    line-height: 1.12;
   }
 
-  .homepage-learning-icon {
+  .homepage-anniversary-header p {
+    font-size: 15.5px;
+  }
+
+  .homepage-anniversary-image.main-image {
+    height: 285px;
+  }
+
+  .homepage-anniversary-image.small-image {
+    height: 245px;
+  }
+
+  .homepage-anniversary-hero-content,
+  .homepage-anniversary-card {
+    padding: 22px;
+  }
+
+  .homepage-anniversary-hero-content h3,
+  .homepage-anniversary-card h3 {
+    font-size: 23px;
+  }
+
+  .homepage-anniversary-hero-content p,
+  .homepage-anniversary-card p {
+    font-size: 14.5px;
+    line-height: 1.7;
+  }
+
+  .homepage-anniversary-card-icon {
     width: 58px;
     height: 58px;
-    font-size: 20px;
-    border-radius: 18px;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
+    border-radius: 19px;
+    font-size: 18px;
+  }
+
+  .homepage-anniversary-badge {
+    width: 96px;
+    height: 96px;
+    padding: 12px;
+  }
+
+  .homepage-anniversary-badge strong {
+    font-size: 23px;
+  }
+
+  .homepage-anniversary-stats strong {
+    font-size: 22px;
+  }
+
+  .homepage-anniversary-stats span {
+    font-size: 14px;
   }
 }
 
@@ -2768,7 +3048,7 @@
 .courses-path-image-wrap-home {
   position: relative;
   width: 100%;
-  height: 285px;
+  height: 350px;
   overflow: hidden;
   background: #e9edf3;
 }
