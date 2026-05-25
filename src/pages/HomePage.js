@@ -266,10 +266,10 @@ function HomePage() {
 
     <div className="homepage-anniversary-layout">
       <div className="homepage-anniversary-hero">
-        <div className="homepage-anniversary-badge">
+        {/*<div className="homepage-anniversary-badge">
           <strong>2025</strong>
           <small>Year of beginning</small>
-        </div>
+        </div> */}
 
         <div className="homepage-anniversary-image main-image">
           <img src="/images/aniversary-1.jpeg" alt="Mind Sphere Academy anniversary celebration" />
